@@ -1,0 +1,376 @@
+/* --- GLOBAL STYLES --- */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FFFFFF; 
+    color: #45464E; 
+    line-height: 1.6;
+}
+
+/* --- NAVIGATION BAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    height: 100px;   
+    width: auto;     
+    display: block;
+    transition: transform 0.3s ease;
+    padding: 5px 0;  
+}
+
+.logo:hover {
+    transform: scale(1.05); 
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px; 
+}
+
+.nav-links li {
+    margin-left: 20px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #45464E; 
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #F2B5D3; 
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #45464E; 
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #FFFFFF; 
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    color: #F2B5D3; 
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #A5B4FC; 
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #F2B5D3; 
+    color: #45464E; 
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #A5B4FC; 
+    color: #FFFFFF;
+}
+/* Button Container */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Secondary Button (White with Dark Blue text) */
+.btn-secondary {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFFFFF;
+    color: #45464E; 
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #FFFFFF;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+/* Make sure the Team cards look centered and neat */
+.team-card {
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+}
+
+/* --- SECTIONS & CARDS --- */
+.content-section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: rgba(165, 180, 252, 0.15); 
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #45464E; 
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #FFFFFF; 
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(69, 70, 78, 0.08); 
+    text-align: left;
+    border-top: 5px solid #F2B5D3; 
+}
+
+.card h3 {
+    color: #45464E; 
+    margin-bottom: 15px;
+}
+
+.tech-list {
+    list-style: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.tech-list li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #FFFFFF; 
+    border-left: 5px solid #F2B5D3; 
+    box-shadow: 0 2px 5px rgba(69, 70, 78, 0.05); 
+}
+/* --- TEAM SECTION STYLES --- */
+/* --- TEAM / DEVELOPERS SECTION STYLES --- */
+#team {
+    background-color: #f4f7fe !important; 
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.big-team-card {
+    background-color: #FFFFFF; 
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(69, 70, 78, 0.1);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 50px; 
+    row-gap: 20px; 
+    text-align: center;
+}
+
+.team-name {
+    color: #45464E; 
+    font-size: 1.2rem;
+    padding: 10px;
+
+}
+/* --- MISSION SECTION STYLES --- */
+#mission {
+    background-color: #f4f7fe; 
+    padding: 100px 20px;
+}
+.mission-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 40px;
+    background-color: #FFFFFF; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(69, 70, 78, 0.1);
+    border-top: 4px solid #F2B5D3; 
+}
+/* --- HOVER ANIMATIONS --- */
+.card, .big-team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .big-team-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(69, 70, 78, 0.2); 
+}
+
+.btn-primary, .btn-secondary {
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: scale(1.05); 
+}
+
+/* --- FOOTER STYLES --- */
+.site-footer {
+    background-color: #45464E; 
+    color: #FFFFFF; 
+    text-align: center;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-content h3 {
+    color: #F2B5D3; 
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-content p {
+    color: #A5B4FC; 
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+/* --- CONTACT SECTION STYLES --- */
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-container h2 {
+    color: #45464E;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 0;
+}
+
+.contact-item strong {
+    display: block;
+    color: #F2B5D3; 
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #45464E;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* The button now acts as a mailto link */
+.contact-container .btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #45464E;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Mobile Friendly Contact */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    /* Center the navigation bar */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .nav-links li {
+        margin-left: 15px; 
+        margin-right: 15px;
+    }
+
+    /* Shrink the massive Hero text */
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Stack the buttons on top of each other */
+    .hero-buttons {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    /* Stack the team names into a single list */
+    .team-grid {
+        grid-template-columns: 1fr; 
+    }
+}
